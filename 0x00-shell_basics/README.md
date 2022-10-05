@@ -1,14 +1,14 @@
-Absolute path name
-Display content list
-Changes working directory to home
-Display current directory in long format   
-Display current directory in long format, user and group IDs and hidden file starting with .  
-Create new directory in tmp
-Move a file
-Delete a file
-Delete a directory
-Changes current directory to previous
-Lists files
-Print type of file
-Create symbol link
-Copies HTML files from current directory to parent 
+1. Absolute path name  
+2. Display content list  
+3. Changes working directory to home   
+4. Display current directory in long format  
+5. Display current directory in long format, user and group IDs and hidden file starting with .     
+6. Create new directory in tmp    
+7. Move a file   
+8. Delete a file  
+9. Delete a directory   
+10. Changes current directory to previous
+11. Lists files
+12. Print type of file
+13. Create symbol link
+14. Copies HTML files from current directory to parent 

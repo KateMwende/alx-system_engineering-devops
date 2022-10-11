@@ -1,10 +1,10 @@
-Prints "Hello World”, followed by a new line to the standard output.
-Displays a confused smiley 
-Display the content of the /etc/passwd
-Display the content of /etc/passwd and /etc/hosts
+Prints "Hello World”, followed by a new line to the standard output  
+Displays a confused smiley  
+Display the content of the /etc/passwd  
+Display the content of /etc/passwd and /etc/hosts 
 Display the last 10 lines of /etc/passwd
 Display the first 10 lines of /etc/passwd
-Displays the third line of the file iacta
+Displays the third line of the file iacta 
 Creates a file
 writes into the file ls_cwd_content
 Duplicates the last line of the file iacta

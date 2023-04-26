@@ -4,10 +4,10 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 
-mkdir /etc/nginx/html
-touch /etc/nginx/html/hello.html
-echo "Hello World!" > /etc/nginx/html/index.html
-echo "server {
+sudo mkdir /etc/nginx/html
+sudo touch /etc/nginx/html/hello.html
+sudo echo "Hello World!" > /etc/nginx/html/index.html
+sudo echo "server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 	root   /etc/nginx/html;

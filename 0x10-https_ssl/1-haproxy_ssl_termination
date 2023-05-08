@@ -35,11 +35,11 @@ defaults
 
 frontend http_front
         bind *:80
-        reqadd X-Forwarded-Proto:\ http
+        http-request add-header X-Forwarded-Proto https
         default_backend http_back
 frontend https_front
-        bind haproxy_www_public_IP:443 ssl crt /etc/haproxy/certs/katemwende.tech.pem
-        reqadd X-Forwarded-Proto:\ https
+        bind *:443 ssl crt /etc/haproxy/certs/katemwende.tech.pem
+        http-request add-header X-Forwarded-Proto https
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
         default_backend http_back

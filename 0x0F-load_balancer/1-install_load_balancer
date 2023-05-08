@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 #Configure HAproxy so that it send traffic to web-01 and web-02
-sudo apt-get -y update
-sudo apt-get install --no-install-recommends software-properties-common
-sudo add-apt-repository ppa:vbernat/haproxy-2.5
-sudo apt-get -y install haproxy=2.5.\*
-
-echo "
+sudo apt -y update
+sudo apt -y install haproxy
+sudo echo "
 frontend http_front
     bind *:80
     default_backend http_back

@@ -5,7 +5,6 @@ myRecords ()
 {
   dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1./$2/g" | awk -F " " 'NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5 }' 
 }
-#check if argumets are two
 if [ "$#" -eq 2 ]
 then
  myRecords "$2.$1" "$2"

@@ -37,12 +37,12 @@ server {
 		}
 	
 		# serve your page from the route /
-                location / {
-		    proxy_pass http://127.0.0.1:5003/2-hbnb.py;
+        location / {
+		    proxy_pass http://127.0.0.1:5003/2-hbnb;
                 }
 
 		# serve Airbnb V4 content
-		location /static {
+		location /static/ {
 		    proxy_pass http://127.0.0.1:5003;
 		}
 }
